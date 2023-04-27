@@ -1,0 +1,24 @@
+program quadratic_roots
+implicit none
+
+real :: a, b, c, discriminant, root1, root2
+
+! Read in the coefficients of the quadratic equation
+print*,"Enter the coefficients of the quadratic equation (a*x^2 + b*x + c = 0): "
+read*, a, b, c
+
+! Calculate the discriminant
+discriminant = b**2 - 4*a*c
+
+! Check if the roots are real or complex
+if (discriminant >= 0.0) then
+    root1 = (-b + sqrt(discriminant))/(2.0*a)
+    root2 = (-b - sqrt(discriminant))/(2.0*a)
+    print*, "The roots are: ", root1, root2
+else
+    print*, "The roots are complex."
+    print*, "The real part of the roots is: ", -b/(2.0*a)
+    print*, "The imaginary part of the roots is: ", sqrt(-discriminant)/(2.0*a)
+end if
+
+end program quadratic_roots
