@@ -1,0 +1,32 @@
+program standard_deviation
+
+implicit none
+
+integer :: n, i
+real :: x(100), mean, variance, std_deviation
+
+! Read in the number of data points
+print*, "Enter the number of data points (up to 100): "
+read*, n
+
+! Read in the data points
+print*, "Enter the data points: "
+do i = 1, n
+    read*, x(i)
+end do
+
+! Calculate the mean
+mean = sum(x(1:n))/n
+
+! Calculate the variance
+variance = sum((x(1:n)-mean)**2)/n
+
+! Calculate the standard deviation
+std_deviation = sqrt(variance)
+
+! Output the results
+print*, "Mean = ", mean
+print*, "Variance = ", variance
+print*, "Standard deviation = ", std_deviation
+
+end program standard_deviation
