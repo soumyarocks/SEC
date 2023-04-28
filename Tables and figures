@@ -1,0 +1,25 @@
+\section{Tables and Figures}
+    Check out the table and figure below:
+    \vspace{100pt}
+    \begin{table}[hbt!]
+    \centering
+    \caption{This is a table that shows how to create different lines as well as different justifications}
+    \begin{tabular}{|l||c|c|c|}
+    \hline
+                     x&1&2&3  \\
+                     \hline
+                     $f(x)$&4&8&12\\
+                     \hline
+                     f(x)&4&8&12\\
+                     \hline
+                \end{tabular}
+                \caption{Caption}
+                \label{tab:my_label}
+            \end{table}
+            
+            \begin{figure}[ht!]
+                \centering
+                \includegraphics[width=\textwidth]{squared.png}
+                \caption{Graph}
+                \label{fig:my_label}
+            \end{figure}
