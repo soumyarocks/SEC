@@ -1,0 +1,9 @@
+\begin{table}[]
+   \centering 
+   
+\begin{tabular}{|c |c |c| c| c| }
+\hline
+a & b & c & d & e \\\hline
+p & q & r & s & t \\\hline
+\end{tabular}
+    \end{table}
