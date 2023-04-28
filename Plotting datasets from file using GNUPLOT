@@ -1,0 +1,15 @@
+plot "data.txt" using 1:2 title 'Y1'
+set pointsize 1.5 
+replot
+plot "data.txt" using 1:2 title 'Y1', "data.txt" using 1:3 title 'Y2'
+set logscale y
+replot
+unset logscale y  
+replot
+plot "data.txt" using 1:3 with linespoints
+plot "data.txt" using 1:3 title 'Y2' with linespoint lc 'blue' dt 1 lw 2 pt 7 ps 1.5
+set format y '%0.2e'
+set border linewidth 2 lc 'red'
+replot
+set timestamp
+replot
