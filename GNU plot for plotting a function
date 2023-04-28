@@ -1,0 +1,10 @@
+set xlabel '{/Symbol p}'
+set ylabel 'sin(x)'
+set title 'Plot of sin(x) from -{/Symbol p} to {/Symbol p}'
+set xrange [-pi:pi]
+set xtics ('-{/Symbol 3p}' -3*pi, '-{/Symbol 2p}' -2*pi, '-{/Symbol p}' -pi, '0' 0, '{/Symbol p}' pi, '{/Symbol 2p}' 2*pi, '{/Symbol 3p}' 3*pi)
+set xtics scale 2
+set grid
+plot sin(x)
+set encoding utf8
+replot
