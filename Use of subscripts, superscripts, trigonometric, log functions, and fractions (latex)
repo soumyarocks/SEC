@@ -1,0 +1,48 @@
+\documentclass[11pt]{article}
+\pagestyle{empty}
+\begin{document}
+    superscripts $$2x^3$$
+    $$2x^{34}$$
+    $$2x^{3x+4}$$
+    $$2x^{3x^4+5}$$
+    $$x^{2^{3^4}}$$
+
+    subscript
+    $$x_1$$
+    $$x_{12}$$
+    $$x_{1_2}$$
+    $$x_{1_{2_3}}$$
+    $$a_0, a_1, a_2, \ldots, a_{100}$$
+
+    Greek Letters
+    $$\pi$$
+    $$\Pi$$
+    $$\alpha$$
+    $$A=\pi R^2 $$
+Trig functions
+    $$y=\sin x$$     %we use backslash before trig functions because when we dont, the compiler take s,i,n,x as seperate variables. (Also, the space isn't there between sin and x. Also, now only y and x are italicized.)
+    $$y=\cos x$$
+    $$y=\csc \theta$$
+    $$y=\sin^{-1} \theta$$
+    $$y=\arcsin x$$
+
+    Log functions
+    $$y=logx$$ %the compiler takes l,0,g,x as variables hence we use backslash.
+    $$y=\log x$$    %only x and y are italicized
+    $$y=\log_5 x$$
+    $$y=\ln x$$
+
+    Roots
+    $$\sqrt{2}$$
+    $$\sqrt{3}{2}$$
+    $$\sqrt{x^2+y^2}$$
+    $$\sqrt{1+x^2}$$
+    $$\sqrt{1+\sqrt{x}}$$
+
+    fractions
+    $$\frac{1}{2}$$
+    About $\displaystyle \frac{2}{3}$ of the glass is full. \\{16pt}
+    About $\displaystyle \frac{2}{3}$ of the glass is full.
+%display style makes the 2/3 appear larger. Note- we could have also used double dollar sign but we needed it in inline mode here.
+
+\end{document}
